@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 30px;
+  width: inherit;
+}
+main .header h1 {
+  font-size: 3rem;
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+main .header p {
+  font-size: 1.43rem;
+  font-family: "Outfit", sans-serif;
+}
+main .prep {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px 20px;
+}
+main .prep label {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+}
+main .prep ul {
+  width: 80%;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-family: "Outfit", sans-serif;
+}
+main .prep ul li {
+  padding-inline: 10px;
+}
+main .ingredients {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+main .ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 20px 30px;
+}
+main .ingredients ul li {
+  line-height: 1.6;
+  padding-inline: 20px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+}
+main .sect-title h2 {
+  font-size: 2.2rem;
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+main .instructions {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+main .instructions ol {
+  padding: 15px 23px;
+}
+main .instructions ol li {
+  font-size: 1.25rem;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.6;
+  padding-inline: 12px;
+  padding-bottom: 6px;
+}
+main .nutrition p {
+  margin-top: 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+main .nutrition .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .nutrition .container p {
+  padding: 0px 20px;
+  font-family: "Outfit", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+main .nutrition .container strong {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-block: 10px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  font-family: "Outfit", sans-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  img {
+    width: 600px;
+  }
+  main {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 600px;
+    margin: 60px auto;
+    border-radius: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */

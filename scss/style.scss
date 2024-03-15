@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+$mobile-breakpoint: 375px;
+$desktop-breakpoint: 1440px;
+
+$primary-nutmeg: hsl(14, 45%, 36%);
+$primary-rasp: hsl(332, 51%, 32%);
+
+$White: hsl(0, 0%, 100%);
+$Rose-White: hsl(330, 100%, 98%);
+$Eggshell: hsl(30, 54%, 90%);
+$Light-Grey: hsl(30, 18%, 87%);
+$Wenge-Brown: hsl(30, 10%, 34%);
+$Dark-Charcoal: rgba(0, 0, 0, 0.2);
+
+$font-size: 1rem;
+
+$font-family: 'Young Serif', sans-serif;
+$font-family-2: 'Outfit', sans-serif;
+
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: $White;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px;
+    width: inherit;
+
+    .header {
+        h1 {
+            font-size: 3rem;
+            font-family: $font-family;
+            font-weight: $font-regular;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.43rem;
+            font-family: $font-family-2;
+        }
+    }
+
+    .prep {
+        background-color: $Rose-White;
+        padding: 20px 20px;
+
+        label {
+            color: $primary-rasp;
+            font-weight: $font-semibold;
+            font-size: 1.5rem;
+            font-family: $font-family-2;
+        }
+
+        ul {
+            width: 80%;
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1.25rem;
+            font-family: $font-family-2;
+            
+            li {
+                padding-inline: 10px;
+            }
+        }
+    }
+
+    .ingredients {
+        border-bottom: 1px solid $Dark-Charcoal;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px 20px 30px;
+            
+
+            li {
+                line-height: 1.6;
+                padding-inline: 20px;
+                font-family: $font-family-2;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .sect-title {
+        h2 {
+            font-size: 2.2rem;
+            font-family: $font-family;
+            font-weight: $font-regular;
+            color: $primary-nutmeg;
+        }
+    }
+
+    .instructions {
+        border-bottom: 1px solid $Dark-Charcoal;
+
+        ol {
+            padding: 15px 23px;
+
+            li {
+                font-size: 1.25rem;
+                font-family: $font-family-2;
+                line-height: 1.6;
+                padding-inline: 12px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+
+    .nutrition {
+        p {
+            margin-top: 10px;
+            font-family: $font-family-2;
+            font-size: 1.1rem;
+            padding-bottom: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            p {
+                padding: 0px 20px;
+                font-family: $font-family-2;
+                border-bottom: 1px solid $Dark-Charcoal;
+            }
+
+            strong {
+                border-bottom: 1px solid $Dark-Charcoal;
+                padding-block: 10px;
+                font-weight: 900;
+                font-size: 1.1rem;
+                font-family: $font-family-2;
+                color: $primary-nutmeg;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $desktop-breakpoint) {
+    body {
+        background-color: $Eggshell;
+    }
+
+    img {
+        width: 600px;
+    }
+
+    main {
+        background-color: $White;
+        max-width: 600px;
+        margin: 60px auto;
+        border-radius: 25px;
+    }
+}
