@@ -119,11 +119,11 @@ main .nutrition .container strong {
     background-color: hsl(30, 54%, 90%);
   }
   img {
-    width: 600px;
+    width: 900px;
   }
   main {
     background-color: hsl(0, 0%, 100%);
-    max-width: 600px;
+    max-width: 900px;
     margin: 60px auto;
     border-radius: 25px;
   }
